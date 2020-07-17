@@ -12,6 +12,6 @@ $factory->define(Review::class, function (Faker $faker) {
     	},
         'customer' => $faker->name,
         'review' => $faker->paragraph,
-        'start' => $faker->numberBetween(0,5)
+        'star' => $faker->numberBetween(0,5)
     ];
 });
