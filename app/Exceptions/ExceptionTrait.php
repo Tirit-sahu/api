@@ -17,6 +17,8 @@ trait ExceptionTrait
         if($this->isHttp($e)){
             return $this->HttpResponse($e);
         }
+
+        return parent::render($request, $e); 
     }
 
 
